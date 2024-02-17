@@ -19,7 +19,7 @@ export const POST = async (req: Request) => {
   const about = formData.get('about')?.toString()
 
   await emailTransport.sendMail({
-    from: 'noreply@lists.nashural.ru',
+    from: 'noreply@ychebotaev.site',
     to: email,
     subject: `Новый контакт: ${name}`,
     html: `<div>
